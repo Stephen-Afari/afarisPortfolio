@@ -1,12 +1,15 @@
 .split-container{
     display: flex;
     .left-split{
-flex:1
+flex:0.5;
+background-color: red
     }
     .middle-split{
-        flex:2
+        flex:4;
+        background-color: yellow
     }
     .right-split{
-        flex:4
+        flex:4;
+        background-color:green
     }
 }

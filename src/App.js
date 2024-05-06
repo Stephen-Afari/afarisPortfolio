@@ -1,22 +1,25 @@
-import { SplitScreen } from "./components/split-screen/split-screen.component";
-const LinksComponent =()=>{
-return (<h1>Left!!</h1>)
-}
+import Home from "./components/routes/home/home.component";
+import { Routes, Route } from "react-router-dom";
+import { AboutMe } from "./components/routes/aboutme/aboutme.component";
+import { Resume } from "./components/routes/resume/resume.components";
+import { Skills } from "./components/routes/skills/skills.components";
 
-const ImageComponent =()=>{
-  return (<h1>Right!</h1>)
-  }
+import { Navigation } from "./components/routes/navigation/navigation.component";
 
-const ProfileComponent =()=>{
-  return(<p>Middle!!</p>)
-}
+
 function App() {
+
   return (
-    <SplitScreen left={LinksComponent} middle={ProfileComponent} right={ImageComponent}
-    leftWeight={1} 
-    rightWeight={2}
-    middleWeight={3}
-    />
+  <Routes>
+    <Route path="/" element={ <Navigation/>}>
+    <Route index element={<Home/>}/>
+    <Route path="/aboutme" element={<AboutMe/>}/>
+    <Route path="/resume" element={<Resume/>}/>
+    <Route path="/skills" element={<Skills/>}/>
+    </Route>
+
+  </Routes>
+ 
   );
 }
 

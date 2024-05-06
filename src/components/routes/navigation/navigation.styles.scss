@@ -1,0 +1,56 @@
+.navigation{
+display: flex;
+justify-content: space-between;
+height: 70px;
+width: 100%;
+margin-bottom: 25px;
+
+
+.myLogo{
+    height: 100%;
+    width: 70px;
+    padding: 25px;
+    .personImag{
+        height: 45%;
+        width: 45%;
+    }
+}
+.nav-links-container{
+    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .aboutmeLink, .skillsLink, .resumeLink{
+        text-decoration: none;
+       
+        letter-spacing: 0.15em;
+        display: inline-block;
+        padding: 15px 10px;
+        position: relative;
+     }
+    .aboutmeUnderline{
+        padding: 15px 10px;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        position: relative;
+        display: inline-block;
+        ::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: block;
+            background: none repeat scroll 0 0 transparent;
+            height: 2px;
+            width: 0;
+            background: black;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          
+        }
+    }
+   
+}
+}
