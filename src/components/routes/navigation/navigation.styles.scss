@@ -7,12 +7,28 @@ margin-bottom: 25px;
 
 
 .myLogo{
-    height: 100%;
-    width: 70px;
-    padding: 25px;
-    .personImag{
-        height: 45%;
-        width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    flex-direction: column;
+   margin-left: 15px;
+   margin-bottom: 15px;
+    min-height: 100px;
+    text-decoration: none;
+   
+   
+    .user-profile-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(85, 105, 120);
+        color: #ffffff;
+        font-size: 30px;
+        border-radius: 50%;
+        font-weight: 100;
     }
 }
 .nav-links-container{
@@ -22,34 +38,39 @@ margin-bottom: 25px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    
 
     .aboutmeLink, .skillsLink, .resumeLink{
         text-decoration: none;
-       
+       color: rgb(85, 105, 120);
         letter-spacing: 0.15em;
         display: inline-block;
         padding: 15px 10px;
         position: relative;
      }
-    .aboutmeUnderline{
-        padding: 15px 10px;
+     .aboutmeUnderline{
+        padding: 10px 10px;
         text-decoration: none;
-        letter-spacing: 0.15em;
-        position: relative;
+         letter-spacing: 0.15em;
+         position: relative;
         display: inline-block;
-        ::after{
+     }
+
+    .aboutmeUnderline::after{
             content: "";
             position: absolute;
             bottom: 0;
             left: 50%;
             display: block;
             background: none repeat scroll 0 0 transparent;
-            height: 2px;
+            height: 3px;
             width: 0;
-            background: black;
+            background: rgb(210, 208, 208);
             transition: width 0.3s ease 0s, left 0.3s ease 0s;
-          
-        }
+    }
+    .aboutmeUnderline::after{
+        width: 50%;
+        left:16%
     }
    
 }
