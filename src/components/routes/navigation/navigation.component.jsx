@@ -3,7 +3,7 @@ import './navigation.styles.scss'
 import { Outlet } from "react-router-dom"
 import { Link } from "react-router-dom"
 import { Fragment } from "react"
-import { FaPersonChalkboard } from "react-icons/fa6";
+// import { FaPersonChalkboard } from "react-icons/fa6";
 import { useState } from 'react';
 // import {ReactComponent as MyLogo} from '../../../assets/afarislogo.svg'
 
@@ -46,17 +46,17 @@ return activeButton===buttonId ? 'aboutmeUnderline':'aboutmeLink'
     return(
       <Fragment>
          <div className="navigation">
-        <Link className="myLogo" to='/'><ProfileImage name='Stephen Afari'/></Link>
+        <Link className="myLogo" to='/'><ProfileImage name='Stephen Afari' /></Link>
        
         <div className="nav-links-container">
-            <Link className={getButtonClass("aboutmeBtn")} to='/aboutme' onClick={()=>toggleActiveButton("aboutmeBtn")}>
+            <Link className={`meLink ${getButtonClass("aboutmeBtn")}`}   to='/aboutme' onClick={()=>toggleActiveButton("aboutmeBtn")}>
             ABOUT ME &ensp;
             </Link>
             <br/>
-            <Link className={getButtonClass("skillsBtn")}  to='/skills' onClick={()=>toggleActiveButton("skillsBtn")}>
+            <Link className={`skillsLink ${getButtonClass("skillsBtn")}`}  to='/skills' onClick={()=>toggleActiveButton("skillsBtn")}>
             SKILLS &ensp;
             </Link>
-            <Link className={getButtonClass("resumeBtn")}  to='/resume' onClick={()=>toggleActiveButton("resumeBtn")}>
+            <Link className={`resumeLink ${getButtonClass("resumeBtn")}`}  to='/resume' onClick={()=>toggleActiveButton("resumeBtn")}>
             RESUME &ensp;
             </Link>
         </div>

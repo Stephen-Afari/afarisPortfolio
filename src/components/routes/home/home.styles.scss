@@ -1,4 +1,44 @@
+.myName{
+  
+    color: rgb(85, 105, 120);
+   
+    .role-tag{
+        font-size: 20px;
+        margin-top: 5px;
+        color: rgb(85, 105, 120);
+        
+    }
+}
+.contactButton{
+margin-bottom: 100px;
+color: white;
+height: 40px;
+width: fit-content;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+border-radius: 5px;
+border-color: transparent;
+background-color: rgb(85, 105, 120) ;
+:hover{
+    color:violet;
+}
 
-.rightItem{
-    background-image: 'https://onedrive.live.com/embed?resid=DB8B44FCBA927998%213438&authkey=%21ACXUQ_NoRxrE8ro&width=475&height=424';
+}
+
+
+.mySocialMediaLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 20px;
+
+    .linkedIn,.gitHub,.twitter{
+        width: 30px;
+        height: 30px;
+        color: rgb(85, 105, 120);;
+        :hover{
+            color:violet
+        }
+    }
 }

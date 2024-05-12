@@ -1,15 +1,14 @@
 import './split-screen.styles.scss'
-export const SplitScreen = ({left:Left, middle:Middle ,right:Right,
-leftWeight, rightWeight, middleWeight})=>{
+export const SplitScreen = ({left:Left, middle:Middle ,right:Right})=>{
     return (
         <div className='split-container'>
-            <div weight={leftWeight}>
-            <Left />
+            <div className='left-split'>
+            <Left className='mySocialMedialLinks'/>
             </div>
-            <div weight={middleWeight}>
+            <div className='middle-split'>
             <Middle />
             </div>
-            <div weight={rightWeight}>
+            <div className='right-split'>
             <Right />
             </div>
           

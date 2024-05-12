@@ -17,7 +17,7 @@ margin-bottom: 25px;
     min-height: 100px;
     text-decoration: none;
    
-   
+
     .user-profile-image{
         display: flex;
         justify-content: center;
@@ -29,6 +29,11 @@ margin-bottom: 25px;
         font-size: 30px;
         border-radius: 50%;
         font-weight: 100;
+
+       
+    }
+    .user-profile-image:hover{
+        color:violet;
     }
 }
 .nav-links-container{
@@ -40,13 +45,24 @@ margin-bottom: 25px;
     justify-content: flex-end;
     
 
-    .aboutmeLink, .skillsLink, .resumeLink{
+    .aboutmeLink{
         text-decoration: none;
        color: rgb(85, 105, 120);
         letter-spacing: 0.15em;
         display: inline-block;
         padding: 15px 10px;
         position: relative;
+      
+        
+     }
+     .meLink:hover{
+        color:violet;
+     }
+     .skillsLink:hover{
+        color:violet;
+     }
+     .resumeLink:hover{
+        color:violet;
      }
      .aboutmeUnderline{
         padding: 10px 10px;

@@ -1,17 +1,30 @@
+
 //We don't want to render the App component directly, hence we create this Home Component to act as the App Component
 import { SplitScreen } from "../../split-screen/split-screen.component";
 import { Outlet } from "react-router-dom";
 import './home.styles.scss'
+import { CiLinkedin } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { Button } from 'primereact/button';
+import { Link } from "react-router-dom";
 
-//https://onedrive.live.com/embed?resid=DB8B44FCBA927998%213438&authkey=%21ACXUQ_NoRxrE8ro&width=475&height=424
+
 const LinksComponent =()=>{
-return (<div>Left!!</div>)
+return (<div className="mySocialMediaLinks"> 
+<a></a>
+<a href="https://www.linkedin.com/in/stephen-afari-ba0425262/" target="_blank"><CiLinkedin className="linkedIn"/></a>
+<a href="https://github.com/Stephen-Afari" target="_blank"><FaGithub className="gitHub"/></a>
+<a href="https://x.com/StephenAfari14?t=OzaknhFXvYtVGOaQCPdtiw&s=08" target="_blank"><FaXTwitter className="twitter"/></a>
+  
+  
+</div>)
 }
 
 const ImageComponent =()=>{
   return (
     <div>
-        Image
+        
         {/* <div className="rightItem">
         Image
         </div> */}
@@ -21,16 +34,20 @@ const ImageComponent =()=>{
   }
 
 const ProfileComponent =()=>{
-  return(<div>Middle!!</div>)
+  return(<div>
+    <p className="myName">STEPHEN AFARI
+    <p className="role-tag">FullStack JavaScript Developer</p>
+    </p>
+    <Link to='/contactme'><Button className='contactButton' label="CONTACT US"/></Link>
+    
+  </div>)
 }
 function Home() {
   return (
     <div>
    <Outlet/>
  <SplitScreen left={LinksComponent} middle={ProfileComponent} right={ImageComponent}
-    leftWeight={1} 
-    rightWeight={2}
-    middleWeight={3}
+  
     />
     </div>
    
