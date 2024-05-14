@@ -38,7 +38,7 @@ const ProfileComponent =()=>{
     <p className="myName">STEPHEN AFARI
     <p className="role-tag">FullStack JavaScript Developer</p>
     </p>
-    <Link to='/contactme'><Button className='contactButton' label="CONTACT US"/></Link>
+    <Link to='/contactme'><Button className='contactButton' label="Let's Talk"/></Link>
     
   </div>)
 }
