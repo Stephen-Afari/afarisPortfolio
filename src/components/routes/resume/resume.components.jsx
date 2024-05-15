@@ -1,5 +1,10 @@
 import './resume.styles.scss'
-import { ResumeCard } from "../../resumeCard/resumeCard"
+
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import { ResumeCard } from '../../resumeCard/resumeCard';
 
 const portfolio = [
     {
@@ -29,14 +34,29 @@ const portfolio = [
     
 ]
 
-export const Resume=()=>{
-    return(
-     <div className="resumeContainer">
-        {portfolio.map((project)=>(            
-    <ResumeCard key={project.id}  details={project}/>
 
-    ) )}
+export const Resume =()=>{
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 2,
+    };
+    return(
+        <div className='sliderContainer'>
+ <Slider {...settings}>
+    
+        {portfolio.map(item=>(
+        <div key={item.id}>
+            {/* <div>{item.name}</div> */}
+            <ResumeCard details={item} className='cardContainer' />
+        </div>
+        ))}
+    
+    </Slider>
+        </div>
+       
   
-     </div>
     )
 }

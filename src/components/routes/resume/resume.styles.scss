@@ -1,10 +1,61 @@
-.resumeContainer{
-display: flex;
-flex-direction: row;
-width: 100%;
+.sliderContainer{
+    display: flex;
+flex-direction:column;
+width: 50%;
+height: 500px;
+justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0; /* Reset default margin */
+        padding: 0; /* Reset default padding */
+// // margin-bottom: 200px;
+// height: fit-content;
 
-// justify-content: space-between;
+    margin-left: 1000px;
+    // margin-right: 100px;
+    // position: relative;
+   
+    .slick-arrow.slick-prev{
+        color: rgb(85, 105, 120) ;
+       }
 
+    .slick-arrow.slick-next{
+        color: rgb(85, 105, 120) ;
+       }
 
+    .slick-list{
+// margin-left: 200px;
+      
+    }
+    // .slick-slider.slick-initialized{
+    //     margin-left: 100px;
+    // }
+    .cardContainer{
+        // width: 70%;
+        // height: 100%;
+        // margin-left: 100px;
+       
+    }
+}
 
+.slick-slider.slick-initialized{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+  
+        padding: 0; 
+    margin-left: 500px;
+    margin-bottom: 240px;
+    // margin-right: 200px;
+    // height: 500px;
+}
+
+.slick-slide.slick-active{
+margin-left: 85px;
+}
+.slick-list{
+    margin-top: 400px;
 }
