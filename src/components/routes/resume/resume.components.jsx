@@ -42,6 +42,8 @@ export const Resume =()=>{
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 2,
+        autoplay: true,
+    autoplaySpeed: 3000
     };
     return(
         <div className='sliderContainer'>

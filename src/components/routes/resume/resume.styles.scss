@@ -11,20 +11,20 @@ justify-content: center;
 // // margin-bottom: 200px;
 // height: fit-content;
 
-    margin-left: 1000px;
+    // margin-left: 1000px;
     // margin-right: 100px;
     // position: relative;
    
     .slick-arrow.slick-prev{
-        color: rgb(85, 105, 120) ;
+        background-color: whitesmoke
        }
 
-    .slick-arrow.slick-next{
-        color: rgb(85, 105, 120) ;
+    .slick-arrow.slick-next::before{
+        background-color: whitesmoke
        }
 
     .slick-list{
-// margin-left: 200px;
+        margin-top: 400px;
       
     }
     // .slick-slider.slick-initialized{
@@ -34,6 +34,8 @@ justify-content: center;
         // width: 70%;
         // height: 100%;
         // margin-left: 100px;
+        width: 70%;
+        height: 100%;
        
     }
 }
@@ -55,6 +57,7 @@ justify-content: center;
 
 .slick-slide.slick-active{
 margin-left: 85px;
+
 }
 .slick-list{
     margin-top: 400px;

@@ -1,40 +1,43 @@
-.sliderContainer{
+.formContainer{
     display: flex;
-flex-direction:column;
-width: 50%;
+    align-items: center;
+    justify-content: center;
+    
+    .nameAndPhoneInputs{
+display: flex;
+justify-content:space-between;
+width: 600px;
+.nameInput,.phoneInput{
+    width: 290px;
+    height: 40px;
+    border-radius: 5px;
+   border: 1px solid rgb(85, 105, 120);
+}
 
-    margin-left: 100px;
-    margin-right: 100px;
-    // position: relative;
-   
-    .slick-arrow.slick-prev{
-        background-color: red;
-       }
-
-    .slick-arrow.slick-next{
-        background-color: red;
-       }
-
-    .slick-list{
-      
     }
-    // .slick-slider.slick-initialized{
-    //     margin-left: 100px;
-    // }
-    .cardContainer{
-        width: 70%;
-        height: 100%;
+    .emailAndTextAreaInputs{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    .emailInput{
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid rgb(85, 105, 120);
     }
-}
-
-.slick-slider.slick-initialized{
-    // width: 100%;
-    // height: 100%;
-}
-
-.slick-slide.slick-active{
-margin-left: 85px;
-}
-.slick-list{
-    margin-top: 400px;
+    .textArea{
+        margin-top:20px ;
+        height: 300px;
+        border-radius: 5px;
+        border: 1px solid rgb(85, 105, 120);
+        }
+    }
+    .buttonIcon{
+        margin-top: 10px;
+        width: 600px;
+        height: 35px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 1px solid rgb(85, 105, 120);
+        color:  rgb(85, 105, 120);
+    }
 }
