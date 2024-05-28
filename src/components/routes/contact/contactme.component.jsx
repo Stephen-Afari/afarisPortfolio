@@ -11,7 +11,8 @@ export const ContactMe=()=>{
 const handleSubmit = async(e)=>{
     e.preventDefault();
     try{
-        await axios.post("/api/v1/send",{name,phone, email, message})
+       
+        await axios.post(" https://afariportfolio-api.onrender.com/api/v1/send",{name,phone, email, message})
         alert('Email sent!!!');
 //Clear the input fields
         setName('');

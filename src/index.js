@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { disableReactDevTools } from '@fvilers/disable-react-devtools';
+//disabling React devtools for deployment in our application
+if(process.env.NODE_ENV === 'production') disableReactDevTools();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
